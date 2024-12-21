@@ -11,7 +11,7 @@ import "../assets/styles/Timeline.scss";
 
 function EducationTimeline() {
   return (
-    <div id="history">
+    <div id="educational-history">
       <div className="items-container">
         <h1>Education History</h1>
         <VerticalTimeline>

@@ -11,7 +11,7 @@ import "../assets/styles/Timeline.scss";
 
 function CareerTimeline() {
   return (
-    <div id="history">
+    <div id="career-history">
       <div className="items-container">
         <h1>Career History</h1>
         <VerticalTimeline>
