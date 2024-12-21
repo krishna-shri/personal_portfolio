@@ -15,6 +15,7 @@ import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import MenuIcon from "@mui/icons-material/Menu";
 import Toolbar from "@mui/material/Toolbar";
+import Resume from "../assets/resume/Shri_Krishna_Resume.pdf";
 
 const drawerWidth = 240;
 const navItems = [
@@ -23,6 +24,7 @@ const navItems = [
   ["Career", "career-history"],
   ["Projects", "projects"],
   ["Contact", "contact"],
+  ["Resume", "/assets/resume/Shri_Krishna_Resume.pdf"],
 ];
 
 function Navigation({ parentToChild, modeChange }: any) {
@@ -53,12 +55,21 @@ function Navigation({ parentToChild, modeChange }: any) {
 
   const scrollToSection = (section: string) => {
     console.log(section);
-    const expertiseElement = document.getElementById(section);
-    if (expertiseElement) {
-      expertiseElement.scrollIntoView({ behavior: "smooth" });
-      console.log("Scrolling to:", expertiseElement); // Debugging: Ensure the element is found
+    if (section === "/assets/resume/Shri_Krishna_Resume.pdf") {
+      const link = document.createElement("a");
+      link.href = Resume;
+      link.download = "Shri_Krishna_Resume.pdf";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
     } else {
-      console.error('Element with id "expertise" not found'); // Debugging: Log error if element is not found
+      const expertiseElement = document.getElementById(section);
+      if (expertiseElement) {
+        expertiseElement.scrollIntoView({ behavior: "smooth" });
+        console.log("Scrolling to:", expertiseElement); // Debugging: Ensure the element is found
+      } else {
+        console.error('Element with id "expertise" not found'); // Debugging: Log error if element is not found
+      }
     }
   };
 
