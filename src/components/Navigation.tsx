@@ -19,6 +19,7 @@ import Resume from "../assets/resume/Shri_Krishna_Resume.pdf";
 
 const drawerWidth = 240;
 const navItems = [
+  ["Home", "home"],
   ["Education", "educational-history"],
   ["Expertise", "expertise"],
   ["Career", "career-history"],
