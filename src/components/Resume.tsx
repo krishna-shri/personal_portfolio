@@ -8,8 +8,11 @@ export function Resume() {
         <h1>Resume</h1>
         <object data={resumePDF} type="application/pdf" className="resume-pdf">
           <p>
-            Your web browser doesn't have a PDF plugin. Instead you can{" "}
-            <a href={resumePDF}>Resume</a> to download the PDF.
+            Your web browser doesn't have a PDF plugin. Instead you can click{" "}
+            <a href={resumePDF}>
+              <span className="download-pdf">here</span>
+            </a>{" "}
+            to download the resume.
           </p>
         </object>
       </div>
