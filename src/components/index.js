@@ -6,3 +6,4 @@ export { default as CareerTimeline } from "./CareerTimeline";
 export { default as EducationTimeline } from "./EducationTimeline";
 export { default as Project } from "./Project";
 export { default as Contact } from "./Contact";
+export { default as Resume } from "./Resume";

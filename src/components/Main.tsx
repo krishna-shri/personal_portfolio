@@ -1,16 +1,14 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import "../assets/styles/Main.scss";
+import profilePic from "../assets/images/profile.jpeg";
 
 function Main() {
   return (
     <div id="home" className="container">
       <div className="about-section">
         <div className="image-wrapper">
-          <img
-            src="https://media.licdn.com/dms/image/v2/D5603AQGof-EuPfxSyw/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1732426955644?e=1740009600&v=beta&t=vO5amrtDTN9CiX7xY0pSo0JzU86CfZzRaiOpHjsOmL4"
-            alt="Avatar"
-          />
+          <img src={profilePic} alt="Avatar" />
         </div>
         <div className="content">
           <div className="social_icons">
