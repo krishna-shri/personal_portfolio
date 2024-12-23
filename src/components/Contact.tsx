@@ -54,10 +54,7 @@ function Contact() {
     }
   };
 
-  const handleClose = (
-    _?: React.SyntheticEvent | Event,
-    reason?: string
-  ) => {
+  const handleClose = (_?: React.SyntheticEvent | Event, reason?: string) => {
     if (reason === "clickaway") {
       return;
     }
@@ -115,6 +112,7 @@ function Contact() {
           >
             <div className="form-flex">
               <TextField
+                className="form-field-input"
                 required
                 id="outlined-required"
                 label="Your Name"
@@ -125,6 +123,7 @@ function Contact() {
                 helperText={nameError ? "Please enter your name" : ""}
               />
               <TextField
+                className="form-field-input"
                 required
                 id="outlined-required"
                 label="Email / Phone"
@@ -144,7 +143,7 @@ function Contact() {
               placeholder="Send me any inquiries or questions"
               multiline
               rows={10}
-              className="body-form"
+              className={`body-form form-field-input`}
               value={message}
               onChange={handleMessageChange}
               error={messageError}
@@ -157,7 +156,11 @@ function Contact() {
             >
               Send
             </Button>
-            <Snackbar open={openSnackBar} autoHideDuration={2000} onClose={handleClose}>
+            <Snackbar
+              open={openSnackBar}
+              autoHideDuration={2000}
+              onClose={handleClose}
+            >
               <Alert
                 onClose={handleClose}
                 severity="success"
