@@ -6,7 +6,12 @@ export function Resume() {
     <div id="resume">
       <div className="items-container">
         <h1>Resume</h1>
-        <embed src={resumePDF} className="resume-pdf" />
+        <object data={resumePDF} type="application/pdf" className="resume-pdf">
+          <p>
+            Your web browser doesn't have a PDF plugin. Instead you can{" "}
+            <a href={resumePDF}>Resume</a> to download the PDF.
+          </p>
+        </object>
       </div>
     </div>
   );
