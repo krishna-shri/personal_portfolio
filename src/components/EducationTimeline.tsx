@@ -30,7 +30,9 @@ function EducationTimeline() {
             <h4 className="vertical-timeline-element-subtitle">Chicago, IL</h4>
             <p>
               <strong> Coursework:</strong> Database Systems, User Interface
-              Design & Programming, Secure Web Application Development
+              Design & Programming, Secure Web Application Development,
+              Distributed Computing Systems, Principles of Concurrent
+              Programming
             </p>
           </VerticalTimelineElement>
           <VerticalTimelineElement

@@ -29,13 +29,14 @@ function Main() {
           </div>
           <h1>Shri Krishna</h1>
           <p>
-            Seeking Summer 2025 Internships | Graduate Assistant @ UIC | Full
-            Stack Developer with 4 years of experience building scalable systems
-            using ReactJS, Java and Go. Skilled in performance optimization,
-            data visualization, and deploying solutions with Ansible, Jenkins
-            and MongoDB
+            Summer 2025 Internship Seeker
           </p>
-
+          <br />
+          <p>🚀 Summer 2025 Internship Seeker | Frontend Artisan @ UIC</p>
+          <br />
+          <p>⚡Full-Stack Architect sculpting bulletproof systems with React/Java/Go</p>
+          <br />
+          <p>📊 Performance whisperer & deployment DJ spinning Ansible/Jenkins pipelines</p>
           <div className="mobile_social_icons">
             <a
               href="https://github.com/skris56uic"
