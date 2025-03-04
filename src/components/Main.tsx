@@ -32,7 +32,7 @@ function Main() {
             Summer 2025 Internship Seeker
           </p>
           <br />
-          <p>🚀 Summer 2025 Internship Seeker | Frontend Artisan @ UIC</p>
+          <p>🚀 Frontend Artisan @ UIC Technology Solutions</p>
           <br />
           <p>⚡Full-Stack Architect sculpting bulletproof systems with React/Java/Go</p>
           <br />
