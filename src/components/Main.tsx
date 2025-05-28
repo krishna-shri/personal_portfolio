@@ -29,14 +29,21 @@ function Main() {
           </div>
           <h1>Shri Krishna</h1>
           <p>
-            Summer 2025 Internship Seeker
+            I build software that makes you wonder how you ever lived without
+            it!
           </p>
           <br />
           <p>🚀 Frontend Artisan @ UIC Technology Solutions</p>
           <br />
-          <p>⚡Full-Stack Architect sculpting bulletproof systems with React/Java/Go</p>
+          <p>
+            ⚡Full-Stack Architect sculpting bulletproof systems with
+            React/Java/Go
+          </p>
           <br />
-          <p>📊 Performance whisperer & deployment DJ spinning Ansible/Jenkins pipelines</p>
+          <p>
+            📊 Performance whisperer & deployment DJ spinning Ansible/Jenkins
+            pipelines
+          </p>
           <div className="mobile_social_icons">
             <a
               href="https://github.com/skris56uic"

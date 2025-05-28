@@ -23,7 +23,6 @@ const navItems = [
   ["Expertise", "expertise"],
   ["Career", "career-history"],
   ["Projects", "projects"],
-  ["Resume", "resume"],
   ["Contact", "contact"],
 ];
 
