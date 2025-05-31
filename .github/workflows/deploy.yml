@@ -5,7 +5,7 @@ on:
     branches: [main]
 
 permissions:
-  contents: write
+  contents: read
   pages: write
   id-token: write
 
@@ -21,10 +21,10 @@ jobs:
           node-version: "20"
       - name: Install dependencies
         run: npm ci
+      - name: Clean build directory
+        run: rm -rf build
       - name: Build the project
         run: npm run build
-      - name: Remove symlinks from build output
-        run: find build -type l -delete
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
