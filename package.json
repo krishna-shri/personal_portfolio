@@ -1,6 +1,7 @@
 {
   "name": "krishna-portfolio",
   "version": "1.0.0",
+  "homepage": "https://krishna-shri.github.io/personal_portfolio",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
@@ -31,9 +32,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
