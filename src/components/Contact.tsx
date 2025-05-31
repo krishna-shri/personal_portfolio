@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import SendIcon from "@mui/icons-material/Send";
 import TextField from "@mui/material/TextField";
-import MuiAlert, { AlertProps } from "@mui/material/Alert";
+import MuiAlert, { AlertColor, AlertProps } from "@mui/material/Alert";
 import { Snackbar } from "@mui/material";
 
 const Alert = React.forwardRef<HTMLDivElement, AlertProps>(function Alert(
@@ -24,6 +24,8 @@ function Contact() {
   const [emailError, setEmailError] = useState<boolean>(false);
   const [messageError, setMessageError] = useState<boolean>(false);
   const [openSnackBar, setSnackBarOpen] = useState<boolean>(false);
+  const [snackbarMessage, setSnackbarMessage] = useState<string>("");
+  const [snackbarSeverity, setSnackbarSeverity] = useState<AlertColor>("info");
 
   const form = useRef();
 
@@ -81,11 +83,24 @@ function Contact() {
 
       emailjs.send(SERVICEID, TEMPLATEID, templateParams, PUBLICAPIKEY).then(
         (response) => {
-          console.log("SUCCESS!", response.status, response.text);
-          setSnackBarOpen(true);
+          if (response.status === 200) {
+            setSnackbarMessage(
+              "I have received your message. Can't wait to connect with you!"
+            );
+            setSnackbarSeverity("success");
+            setSnackBarOpen(true);
+          } else {
+            console.error("Email sending failed:", response);
+            setSnackbarMessage("Failed to send message. Please try again.");
+            setSnackbarSeverity("error");
+            setSnackBarOpen(true);
+          }
         },
         (error) => {
-          console.log("FAILED...", error);
+          console.error("Server error:", error);
+          setSnackbarMessage("Failed to send message. Please try again.");
+          setSnackbarSeverity("error");
+          setSnackBarOpen(true);
         }
       );
       setName("");
@@ -163,10 +178,10 @@ function Contact() {
             >
               <Alert
                 onClose={handleClose}
-                severity="success"
+                severity={snackbarSeverity}
                 sx={{ width: "100%" }}
               >
-                I have received your message. Can't wait to connect with you!
+                {snackbarMessage}
               </Alert>
             </Snackbar>
           </Box>
