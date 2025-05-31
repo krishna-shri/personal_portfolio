@@ -4,21 +4,11 @@
 
 ## What is this?
 
-This simple portfolio template is designed to showcase your past projects, career history, skill sets, and more.
+This simple portfolio template is designed to showcase my past projects, career history, skill sets, and more.
 
 View the [Demo](https://skris56.people.uic.edu/).
 
-**This template is free to use, and no attribution is required.** You can fork or download this repository to customize it for your own use. Please don't forget to leave a ⭐ if you like this portfolio!
-
 ![screenshot](./src/assets//images/screenshot.png)
-
-## Features
-
-✅ Open source (free to use, no attribution required)  
-✅ Responsive design & mobile-friendly  
-✅ Supports both dark and light modes  
-✅ Highly customizable multi-component layout  
-✅ Built with modern technologies (React, TypeScript, JavaScript, and SCSS)  
 
 ## Quick Setup
 
@@ -37,11 +27,7 @@ View the [Demo](https://skris56.people.uic.edu/).
 3. Start the development server:
 
     ```bash
-    npm start
+    npm run start
     ```
 
 4. Open [http://localhost:3000](http://localhost:3000) to view the app in the browser.
-
-5. Customize the template by navigating to the `/src/components` directory. Modify texts, pictures, and other information as needed.
-
-The page will reload if you make edits, and you will see any lint errors in the console.
