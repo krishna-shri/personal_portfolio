@@ -34,8 +34,6 @@ function Contact() {
     } else {
       setNameError(false);
     }
-
-    console.log("envs", process.env);
   };
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
