@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
 
 permissions:
   contents: write
@@ -23,11 +23,15 @@ jobs:
         run: npm ci
       - name: Build the project
         run: npm run build
+      - name: Remove symlinks from build output
+        run: find build -type l -delete
       - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
           name: "github-pages"
           path: build
+      - name: Check build directory size
+        run: du -sh build
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
         with:
