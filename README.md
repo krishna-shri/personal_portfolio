@@ -6,7 +6,7 @@
 
 This simple portfolio template is designed to showcase my past projects, career history, skill sets, and more.
 
-View the [Demo](https://skris56.people.uic.edu/).
+View the [Demo](https://krishna-shri.github.io/personal_portfolio/).
 
 ![screenshot](./src/assets//images/screenshot.png)
 
