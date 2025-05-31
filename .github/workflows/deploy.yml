@@ -12,6 +12,11 @@ permissions:
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    env:
+      REACT_APP_EMAILJS_SERVICEID: ${{ vars.REACT_APP_EMAILJS_SERVICEID }}
+      REACT_APP_EMAILJS_TEMPLATEID: ${{ vars.REACT_APP_EMAILJS_TEMPLATEID }}
+      REACT_APP_EMAILJS_PUBLICKEY: ${{ vars.REACT_APP_EMAILJS_PUBLICKEY }}
+      
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4

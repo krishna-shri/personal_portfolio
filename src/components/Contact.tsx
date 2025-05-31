@@ -34,6 +34,8 @@ function Contact() {
     } else {
       setNameError(false);
     }
+
+    console.log("envs", process.env);
   };
 
   const handleEmailChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -61,9 +63,9 @@ function Contact() {
     setSnackBarOpen(false);
   };
 
-  const SERVICEID = "";
-  const TEMPLATEID = "";
-  const PUBLICAPIKEY = "";
+  const SERVICEID = process.env.REACT_APP_EMAILJS_SERVICEID ?? "";
+  const TEMPLATEID = process.env.REACT_APP_EMAILJS_TEMPLATEID ?? "";
+  const PUBLICAPIKEY = process.env.REACT_APP_EMAILJS_PUBLICAPIKEY ?? "";
 
   const sendEmail = (e: any) => {
     e.preventDefault();
