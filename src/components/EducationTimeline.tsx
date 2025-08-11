@@ -49,7 +49,8 @@ function EducationTimeline() {
             <p>
               <strong> Coursework:</strong> Data Structures and Algorithms,
               Integrative Programming and Technologies, Operating Systems,
-              Networking and Security
+              Networking and Security, Cryptography, Algorithm Analysis &
+              Design, Cloud Computing
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>
