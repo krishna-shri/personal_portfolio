@@ -13,12 +13,8 @@ function Main() {
         </div>
         <div className="content">
           <div className="social_icons">
-            <a
-              href="https://github.com/skris56uic"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <GitHubIcon />
+            <a href="mailto:skris56@uic.edu?subject=Inquiry%20from%20Portfolio&body=Hi,%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20connect.">
+              <MailIcon />
             </a>
             <a
               href="https://www.linkedin.com/in/shri-krishna-20/"
@@ -28,11 +24,11 @@ function Main() {
               <LinkedInIcon />
             </a>
             <a
-              href="mailto:shri.krishna@example.com"
+              href="https://github.com/skris56uic"
               target="_blank"
               rel="noreferrer"
             >
-              <MailIcon />
+              <GitHubIcon />
             </a>
           </div>
           <h1>Shri Krishna</h1>
