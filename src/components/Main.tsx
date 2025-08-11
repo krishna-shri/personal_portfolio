@@ -29,20 +29,24 @@ function Main() {
           </div>
           <h1>Shri Krishna</h1>
           <p>
-            I build software that makes you wonder how you ever lived without
-            it!
-          </p>
-          <br />
-          <p>🚀 Frontend Artisan @ UIC Technology Solutions</p>
-          <br />
-          <p>
-            ⚡Full-Stack Architect sculpting bulletproof systems with
-            React/Java/Go
+            Seeking Full-Time Software Engineering Roles | Available May 2026
           </p>
           <br />
           <p>
-            📊 Performance whisperer & deployment DJ spinning Ansible/Jenkins
-            pipelines
+            🚀 Specialize in designing and developing web applications that
+            balance scalability, performance, and usability
+          </p>
+          <br />
+          <p>
+            ⚡Excel at transforming complex datasets into clear, actionable
+            visualizations that help empower customers and stakeholders to make
+            informed decisions
+          </p>
+          <br />
+          <p>
+            📊 Adept at building performant backend services with Go/Node.js
+            and engineering robust solutions for critical challenges like data
+            security and system performance
           </p>
           <div className="mobile_social_icons">
             <a

@@ -31,6 +31,7 @@ const labelsFirst = [
 
 const labelsSecond = [
   "Highcharts",
+  "Handsontable",
   "Figma",
   "D3.js",
   "Material-UI",
@@ -47,6 +48,7 @@ const labelsThird = [
   "GitHub Actions",
   "Ansible",
   "Cypress",
+  "Playwright",
   "Selenium",
   "Git",
   "VictoriaMetrics",
