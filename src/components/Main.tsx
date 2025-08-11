@@ -1,5 +1,6 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MailIcon from "@mui/icons-material/Mail";
 import "../assets/styles/Main.scss";
 import profilePic from "../assets/images/profile.jpeg";
 
@@ -26,6 +27,13 @@ function Main() {
             >
               <LinkedInIcon />
             </a>
+            <a
+              href="mailto:shri.krishna@example.com"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <MailIcon />
+            </a>
           </div>
           <h1>Shri Krishna</h1>
           <p>
@@ -39,13 +47,13 @@ function Main() {
           <br />
           <p>
             ⚡Excel at transforming complex datasets into clear, actionable
-            visualizations that help empower customers and stakeholders to make
-            informed decisions
+            visualizations that help empower customers to make informed
+            decisions
           </p>
           <br />
           <p>
-            📊 Adept at building performant backend services with Go/Node.js
-            and engineering robust solutions for critical challenges like data
+            📊 Adept at building performant backend services with Go/Node.js and
+            engineering robust solutions for critical challenges like data
             security and system performance
           </p>
           <div className="mobile_social_icons">

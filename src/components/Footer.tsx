@@ -1,6 +1,6 @@
-import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import MailIcon from "@mui/icons-material/Mail";
 import "../assets/styles/Footer.scss";
 
 function Footer() {
@@ -20,6 +20,13 @@ function Footer() {
           rel="noreferrer"
         >
           <LinkedInIcon />
+        </a>
+        <a
+          href="mailto:shri.krishna@example.com"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <MailIcon />
         </a>
       </div>
       <p>
