@@ -21,7 +21,7 @@ function Footer() {
         >
           <LinkedInIcon />
         </a>
-        <a href="mailto:skris56@uic.edu?subject=Inquiry%20from%20Portfolio&body=Hi,%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20connect.">
+        <a href="mailto:shrikrishna1220@gmail.com?subject=Inquiry%20from%20Portfolio&body=Hi,%0AI%20saw%20your%20portfolio%20and%20would%20like%20to%20connect.">
           <MailIcon />
         </a>
       </div>
